@@ -48,3 +48,5 @@ If your Morph Tool resources are in a different directory, set `MORPH_TOOL_DIR` 
 - The first request imports `word_split.py` and loads the dictionaries; later requests reuse the loaded module to avoid repeating that work.
 - Dictionary and FSA files remain on disk because the splitter and Morph Tool need them. Only each request's word, split candidates, analyses, and result stay in memory.
 - The full linguistic accuracy depends on the entries in the WX dictionaries, the rules in `word_split.py`, and the analyses returned by `morph_kan.pl`.
+
+index.html should be inside the Template directory.
